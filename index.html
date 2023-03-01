@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f32fcd4286.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./images/icons/amazon-icon-modified.png">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <link rel="stylesheet" href="./CSS/style3.css">
+    <link rel="stylesheet" href="./CSS/style4.css">
+
+    <title>Amazon Clone - By Aravindh Raj</title>
+</head>
+
+<body>
+    <nav>
+        <section>
+            <a href="#" class="main-logo">
+                <img src="./images/amazon-logo.png" alt="amazon logo">
+            </a>
+            <a href="#" class="location">
+                <span>
+                    <h5>Deliver to</h5>
+                    <div style="display: flex;">
+                        <img style="width: 20px;" src="./images/icons/location.png" alt="">
+                        <p style="margin-left: 0px;">India</p>
+                    </div>
+                </span>
+            </a>
+            <form class="search-form">
+                <div class="search-main">
+                    <div>
+                        <select name="departments" id="departments" class="search-select">
+                            <option hidden selected value="All">All</option>
+                            <option value="All Departments">All Departments</option>
+                            <option value="Arts & Crafts">Arts & Crafts</option>
+                            <option value="Automotive">Automotive</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                            <option value="Books">Books</option>
+                            <option value="Baby">Boys' Fashion</option>
+                            <option value="Computers">Computers</option>
+                            <option value="Deals">Deals</option>
+                            <option value="Digital Music">Digital Music</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Girls' Fashion">Girls' Fashion</option>
+                            <option value="Health & Household">Health & Household</option>
+                            <option value="Home & Kitchen">Home & Kitchen</option>
+                            <option value="Industrial & Scientific">Industrial & Scientific</option>
+                            <option value="Kindle Store">Kindle Store</option>
+                            <option value="Luggage">Luggage</option>
+                            <option value="Mens' Fashion">Mens' Fashion</option>
+                            <option value="Movies & TV">Movies & TV</option>
+                            <option value="Music, CDs & Vinyl">Music, CDs & Vinyl</option>
+                            <option value="Pet Supplies">Pet Supplies</option>
+                            <option value="Prime Video">Prime Video</option>
+                            <option value="Software">Software</option>
+                            <option value="Sports & Outdoors">Sports & Outdoors</option>
+                            <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                            <option value="Toys & Games">Toys & Games</option>
+                            <option value="Video Games">Video Games</option>
+                            <option value="Womens' Fashion">Womens' Fashion</option>
+                        </select>
+                        <input class="search-input" type="text" placeholder="Search Amazon"
+                            style="letter-spacing: 0.5px;">
+                        <button class="search-button"><i style="color: rgba(0, 0, 0, 0.832);"
+                                class="fa fa-solid fa-magnifying-glass fa-xl"></i></button>
+                    </div>
+                </div>
+            </form>
+            <a href="#" class="country">
+                <span>
+                    <div>
+                        <img src="./images/flags/united-states-of-america.png" alt="">
+                    </div>
+                    <div>
+                        <p class="en">EN <img class="triangle"
+                                src="./images/icons/pngfind.com-black-triangle-png-226586.png" alt=""> </p>
+                    </div>
+                </span>
+            </a>
+            <a href="#" class="signIn">
+                <span style="display: flex; flex-direction: column;">
+                    <div>
+                        <h5>Hello, sign in</h5>
+                        <p>Account & Lists</p>
+                    </div>
+                    <div>
+                        <img class="triangle" src="./images/icons/pngfind.com-black-triangle-png-226586.png" alt="">
+                    </div>
+                </span>
+                <span class="hover-signin">
+                    <!-- hover nav -->
+                </span>
+            </a>
+            <a href="#" class="order">
+                <span>
+                    <h5>Returns</h5>
+                    <p>& Orders</p>
+                </span>
+            </a>
+            <a href="#" class="cart">
+                <span class="cart-text">
+                    <p class="cart-count">0</p>
+                    <img src="./images/icons/cart.png" alt="cart icon">
+                    <h5>Cart</h5>
+                </span>
+            </a>
+            <a style="width: 5px; border: transparent;"></a>
+        </section>
+        <section class="section2">
+            <a href="#">
+                <span class="icon" style="display: grid !important; width: min-content;">
+                    <div class="close-icon">
+                        <div class="icon-span1 icon-span"></div>
+                        <div class="icon-span2 icon-span"></div>
+                        <div class="icon-span3 icon-span"></div>
+                    </div>
+                    <div>All</div>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <h4>Today's Deals</h4>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <h4>Customer Service</h4>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <h4>Registry</h4>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <h4>Gift Cards</h4>
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    <h4>Sell</h4>
+                </span>
+            </a>
+        </section>
+    </nav>
+    <main>
+        <section class="mainSection1">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="./images/71tIrZqybrL._SX3000_.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/61TD5JLGhIL._SX3000_.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/61jovjd+f9L._SX3000_.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/61DUO0NqyyL._SX3000_.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/71qid7QFWJL._SX3000_.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><i style="color: black;"
+                        class="fa-solid fa-chevron-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i style="color: black;"
+                        class="fa-solid fa-chevron-right"></i></a>
+
+            </div>
+
+        </section>
+        <section class="mainSection2">
+            <div class="add center">
+                You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery.&nbsp;<a href="amazon.in">Click here to go to amazon.in</a>
+            </div>
+            <section class="main-cards">
+                <div class="cards card1">
+                    <div class="card-title">
+                        <h4>Gaming accessories</h4>
+                    </div>
+                    <div class="four-img img-parent">
+                        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/headset.jpg" alt="">
+                                </div>
+                                <p>Headsets</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/keyboard.jpg" alt="">
+                                </div>
+                                <p>keyboards</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/mice.jpg" alt="">
+                                </div>
+                                <p>Computer mice</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/chairs.jpg" alt="">
+                                </div>
+                                <p>Chairs</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+                <div class="cards card2">
+                    <div class="card-title">
+                        <h4>Refresh your space</h4>
+                    </div>
+                    <div class="four-img img-parent">
+                        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/dining.jpg" alt="">
+                                </div>
+                                <p>Dining</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/home.jpg" alt="">
+                                </div>
+                                <p>Home</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/kitchen.jpg" alt="">
+                                </div>
+                                <p>Kitchen</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/health&beauty.jpg" alt="">
+                                </div>
+                                <p>Health and Beauty</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+                <div class="cards card3">
+                    <div class="card-title">
+                        <h4>GShop by Category</h4>
+                    </div>
+                    <div class="four-img img-parent">
+                        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/laptop.jpg" alt="">
+                                </div>
+                                <p>Computer & Accessories</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/console.jpg" alt="">
+                                </div>
+                                <p>Video Games</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/cam.jpg" alt="">
+                                </div>
+                                <p>Baby</p>
+                            </a>
+                            <a href="#" class="four-img-span">
+                                <div style="display: flex; justify-content: center;">
+                                    <img class="card-img" src="./images/cards/four img cards/toy.jpg" alt="">
+                                </div>
+                                <p>Toys & Games</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+                <div class="cards card4">
+                    <div style="box-sizing: border-box !important;">
+                        <div>
+                            <h4>Sign in for the best experience</h4>
+                            <button style="width: 100%;">Sign in securely</button>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <img class="center-img" src="./images/cards/blue add.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- row 2 -->
+                <div class="cards card5">
+                    <div class="card-title">
+                        <h4>Deals & Promotions</h4>
+                    </div>
+                    <div class="center img-parent"><img class="card-img" src="./images/cards/cycle.jpg" alt=""></div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+                <div class="cards card6">
+                    <div class="card-title">
+                        <h4>Beauty picks</h4>
+                    </div>
+                    <div class="center img-parent"><img class="card-img" src="./images/cards/beauty pick.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+                <div class="cards card7">
+                    <div class="card-title">
+                        <h4>Get fit at home</h4>
+                    </div>
+                    <div class="center img-parent"><img class="card-img" src="./images/cards/fitnes home.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+                <div class="cards card8">
+                    <div class="card-title">
+                        <h4>Health & Personal care</h4>
+                    </div>
+                    <div class="center img-parent"><img class="card-img" src="./images/cards/health and care.jpg"
+                            alt=""></div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+
+                <!-- card 9 -->
+                <div class="cards card9">
+                    <div class="card-title">
+                        <h4>Easy returns</h4>
+                    </div>
+                    <div class="center img-parent"><img class="card-img" src="./images/cards/easy returns.jpg" alt="">
+                    </div>
+                    <div class="card-footer">
+                        <a href="see more">See more</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="mainSection3">
+            <div class="slider-main">
+                <h4>Top Sellers in Books for you</h4>
+                <div class="slider-wrapper">
+                    <ul>
+                        <li><img src="./images/slider/books/book1.jpg"></li>
+                        <li><img src="./images/slider/books/book2.jpg"></li>
+                        <li><img src="./images/slider/books/book3.jpg"></li>
+                        <li><img src="./images/slider/books/book4.jpg"></li>
+                        <li><img src="./images/slider/books/book5.jpg"></li>
+                        <li><img src="./images/slider/books/book6.jpg"></li>
+                        <li><img src="./images/slider/books/book7.jpg"></li>
+                        <li><img src="./images/slider/books/book8.jpg"></li>
+                        <li><img src="./images/slider/books/book9.jpg"></li>
+                        <li><img src="./images/slider/books/book10.jpg"></li>
+                        <li><img src="./images/slider/books/book11.jpg"></li>
+                        <li><img src="./images/slider/books/book12.jpg"></li>
+                        <li><img src="./images/slider/books/book13.jpg"></li>
+                        <li><img src="./images/slider/books/book14.jpg"></li>
+                        <li><img src="./images/slider/books/book15.jpg"></li>
+                        <li><img src="./images/slider/books/book16.jpg"></li>
+                        <li><img src="./images/slider/books/book17.jpg"></li>
+                        <li><img src="./images/slider/books/book18.jpg"></li>
+                        <li><img src="./images/slider/books/book19.jpg"></li>
+                        <li><img src="./images/slider/books/book20.jpg"></li>
+                        <li><img src="./images/slider/books/book21.jpg"></li>
+                        <li><img src="./images/slider/books/book22.jpg"></li>
+                        <li><img src="./images/slider/books/book23.jpg"></li>
+                        <li><img src="./images/slider/books/book24.jpg"></li>
+                        <li><img src="./images/slider/books/book25.jpg"></li>
+                        <li><img src="./images/slider/books/book26.jpg"></li>
+                        <li><img src="./images/slider/books/book27.jpg"></li>
+                        <li><img src="./images/slider/books/book28.jpg"></li>
+                        <li><img src="./images/slider/books/book29.jpg"></li>
+                        <li><img src="./images/slider/books/book30.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mainSection4">
+            <div class="slider-main">
+                <h4>Popular items this season</h4>
+                <div class="slider-wrapper">
+                    <ul>
+                        <li><img src="./images/slider/items/item1.jpg"></li>
+                        <li><img src="./images/slider/items/item2.jpg"></li>
+                        <li><img src="./images/slider/items/item3.jpg"></li>
+                        <li><img src="./images/slider/items/item4.jpg"></li>
+                        <li><img src="./images/slider/items/item5.jpg"></li>
+                        <li><img src="./images/slider/items/item6.jpg"></li>
+                        <li><img src="./images/slider/items/item7.jpg"></li>
+                        <li><img src="./images/slider/items/item8.jpg"></li>
+                        <li><img src="./images/slider/items/item9.jpg"></li>
+                        <li><img src="./images/slider/items/item10.jpg"></li>
+                        <li><img src="./images/slider/items/item11.jpg"></li>
+                        <li><img src="./images/slider/items/item12.jpg"></li>
+                        <li><img src="./images/slider/items/item13.jpg"></li>
+                        <li><img src="./images/slider/items/item14.jpg"></li>
+                        <li><img src="./images/slider/items/item15.jpg"></li>
+                        <li><img src="./images/slider/items/item16.jpg"></li>
+                        <li><img src="./images/slider/items/item17.jpg"></li>
+                        <li><img src="./images/slider/items/item18.jpg"></li>
+                        <li><img src="./images/slider/items/item19.jpg"></li>
+                        <li><img src="./images/slider/items/item20.jpg"></li>
+                        <li><img src="./images/slider/items/item21.jpg"></li>
+                        <li><img src="./images/slider/items/item22.jpg"></li>
+                        <li><img src="./images/slider/items/item23.jpg"></li>
+                        <li><img src="./images/slider/items/item24.jpg"></li>
+                        <li><img src="./images/slider/items/item25.jpg"></li>
+                        <li><img src="./images/slider/items/item26.jpg"></li>
+                        <li><img src="./images/slider/items/item27.jpg"></li>
+                        <li><img src="./images/slider/items/item28.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mainSection5">
+            <div class="cards card10">
+                <div class="card-title">
+                    <h4>New arrivals in Toys</h4>
+                </div>
+                <div class="center img-parent"><img class="card-img" src="./images/cards/toys.jpg" alt=""></div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+            <div class="cards card11">
+                <div class="card-title">
+                    <h4>For your Fitness Needs</h4>
+                </div>
+                <div class="center img-parent"><img class="card-img" src="./images/cards/fitness men.jpg" alt="">
+                </div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+            <div class="cards card12">
+                <div class="card-title">
+                    <h4>Shop activity tracker and smartwatches</h4>
+                </div>
+                <div class="center img-parent parent-sw"><img class="card-img sw" src="./images/cards/smartwatches.jpg"
+                        alt="">
+                </div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+            <div class="cards card13">
+                <div class="card-title">
+                    <h4>Kindle E readers</h4>
+                </div>
+                <div class="center img-parent"><img class="card-img" src="./images/cards/kindle.jpg" alt=""></div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+        </section>
+        <section class="mainSection6">
+            <div class="slider-main">
+                <h4>Popular items this season</h4>
+                <div class="slider-wrapper">
+                    <ul>
+                        <li><img src="./images/slider/beautys/beauty1.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty2.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty3.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty4.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty5.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty6.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty7.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty8.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty9.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty10.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty11.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty12.jpg"></li>
+                        <li><img src="./images/slider/beautys/beauty13.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mainSection7">
+            <div class="slider-main">
+                <h4>Popular items this season</h4>
+                <div class="slider-wrapper">
+                    <ul>
+                        <li><img src="./images/slider/homes/home1.jpg"></li>
+                        <li><img src="./images/slider/homes/home2.jpg"></li>
+                        <li><img src="./images/slider/homes/home3.jpg"></li>
+                        <li><img src="./images/slider/homes/home4.jpg"></li>
+                        <li><img src="./images/slider/homes/home5.jpg"></li>
+                        <li><img src="./images/slider/homes/home6.jpg"></li>
+                        <li><img src="./images/slider/homes/home7.jpg"></li>
+                        <li><img src="./images/slider/homes/home8.jpg"></li>
+                        <li><img src="./images/slider/homes/home9.jpg"></li>
+                        <li><img src="./images/slider/homes/home10.jpg"></li>
+                        <li><img src="./images/slider/homes/home11.jpg"></li>
+                        <li><img src="./images/slider/homes/home12.jpg"></li>
+                        <li><img src="./images/slider/homes/home13.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mainSection8">
+            <div class="cards card14">
+                <div class="card-title">
+                    <h4>Create with strip lights</h4>
+                </div>
+                <div class="center img-parent"><img class="card-img" src="./images/cards/strip lights.jpg" alt=""></div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+            <div class="cards card15">
+                <div class="card-title">
+                    <h4>Shop Laptops & Tablets</h4>
+                </div>
+                <div class="center img-parent"><img class="card-img" src="./images/cards/laptop tablets.jpg" alt="">
+                </div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+            <div class="cards card16">
+                <div class="card-title">
+                    <h4>Shop Pet supplies</h4>
+                </div>
+                <div class="center img-parent"><img class="card-img" src="./images/cards/pet.jpg" alt="">
+                </div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+            <!--  -->
+            <div class="cards card17">
+                <div class="card-title">
+                    <h4>Gaming accessories</h4>
+                </div>
+                <div class="four-img img-parent">
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <a href="#" class="four-img-span">
+                            <div style="display: flex; justify-content: center;">
+                                <img class="card-img" src="./images/cards/four img cards/headset.jpg" alt="">
+                            </div>
+                            <p>Headsets</p>
+                        </a>
+                        <a href="#" class="four-img-span">
+                            <div style="display: flex; justify-content: center;">
+                                <img class="card-img" src="./images/cards/four img cards/keyboard.jpg" alt="">
+                            </div>
+                            <p>keyboards</p>
+                        </a>
+                        <a href="#" class="four-img-span">
+                            <div style="display: flex; justify-content: center;">
+                                <img class="card-img" src="./images/cards/four img cards/mice.jpg" alt="">
+                            </div>
+                            <p>Computer mice</p>
+                        </a>
+                        <a href="#" class="four-img-span">
+                            <div style="display: flex; justify-content: center;">
+                                <img class="card-img" src="./images/cards/four img cards/chairs.jpg" alt="">
+                            </div>
+                            <p>Chairs</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="see more">See more</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <a href="#">
+                <p>Back to top</p>
+            </a>
+        </div>
+        <div class="footer-mid">
+            <div class="mid-links">
+                <div class="div1 div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Get to Know Us</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Careers</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Blog</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">About Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Investor Relations</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Amazon Devices</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Amazon Science</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="div2 div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Make Money with Us</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Sell products on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Sell on Amazon Business</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Sell apps on Amazon</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Become an Affiliate</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Advertise Your Products</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Self-Publish with Us</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Host an Amazon Hub</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">> See More Make Money with Us</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="div3 div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Amazon Payment Products</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Amazon Business Card</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Shop with Points</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Reload Your Balance</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Amazon Currency Converter</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="div4 div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Let Us Help You</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Amazon and COVID-19</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Your Account</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Your Orders</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Shipping Rates & Policies</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Returns & Replacements</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Manage Your Content and Devices</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Amazon Assistant</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Help</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="logo">
+                <div class="contents">
+                    <a href="#" class="img-box"><img src="./images/amazon-logo.png" alt=""></a>
+                    <div class="boxes-main">
+                        <a href="">
+                            <div class="box box1">
+                                <img src="./images/icons/image.png" alt="">
+                                <p>English</p>
+                                <div class="small-icons">
+                                    <img src="./images/icons/pngfind.com-black-triangle-png-226586.png" alt="">
+                                    <img src="./images/icons/pngfind.com-black-triangle-png-226586.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box box2">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <p>USD-U.S. Dollar</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="box box3">
+                                <img src="./images/flags/united-states-of-america.png" alt="">
+                                <p>United States</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="bottom-contents">
+                <div class="row row1">
+                    <div class="col col1">
+                        <a href="#"><span>Amazon Music</span><br>
+                            Stream millions <br>
+                            of songs
+                        </a>
+                    </div>
+                    <div class="col col2">
+                        <a href="#"><span>Amazon <br> Advertising </span><br>
+                            Find, attract, <br>
+                            and <br>
+                            engage <br>
+                            customers
+                        </a>
+                    </div>
+                    <div class="col col3">
+                        <a href="#"><span>Amazon Drive</span> <br>
+                            Cloud storage <br>
+                            from Amazon
+                        </a>
+                    </div>
+                    <div class="col col4">
+                        <a href="#"><span>6pm</span><br>
+                            Score deals <br>
+                            on fashion brands
+                        </a>
+                    </div>
+                    <div class="col col5">
+                        <a href="#"><span>AbeBooks</span><br>
+                            Books, art <br>
+                            & collectibles
+                        </a>
+                    </div>
+                    <div class="col col6">
+                        <a href="#"><span>ACX</span><br>
+                            Audiobook <br>
+                            Publishing <br>Made Easy
+                        </a>
+                    </div>
+                    <div class="col col7">
+                        <a href="#"><span>Sell on Amazon</span><br>
+                            Start a Selling <br>
+                            Account
+                        </a>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="col col1">
+                        <a href="#"><span>Amazon Business</span><br>
+                            Everything For <br>
+                            Your Business
+                        </a>
+                    </div>
+                    <div class="col col2">
+                        <a href="#"><span>AmazonGlobal</span><br>
+                            Ship Orders <br>
+                            Internationally
+                        </a>
+                    </div>
+                    <div class="col col3">
+                        <a href="#"><span>Home Services</span><br>
+                            Experienced <br>
+                            Pros <br>
+                            Happiness <br>
+                            Guarantee
+                        </a>
+                    </div>
+                    <div class="col col4">
+                        <a href="#"><span>Amazon Ignite</span><br>
+                            Sell your original <br>
+                            Digital Educational <br>
+                            Resources
+                        </a>
+                    </div>
+                    <div class="col col5">
+                        <a href="#"><span>Amazon Web <br> Services</span> <br>
+                            Scalable Cloud <br>
+                            Computing <br>
+                            Services
+                        </a>
+                    </div>
+                    <div class="col col6">
+                        <a href="#"><span>Audible</span><br>
+                            Listen to Books & <br>
+                            Original <br>
+                            Audio <br>
+                            Performances
+                        </a>
+                    </div>
+                    <div class="col col7">
+                        <a href="#"><span>Book Depository</span><br>
+                            Book With Free <br>
+                            Delivery <br>
+                            Worldwide
+                        </a>
+                    </div>
+                </div>
+                <div class="row row3">
+                    <div class="col col1">
+                        <a href="#"><span>Box Office Mojo</span><br>
+                            Find Movie <br>
+                            Box Office Data
+                        </a>
+                    </div>
+                    <div class="col col2">
+                        <a href="#"><span>ComiXology</span><br>
+                            Thousands of <br>
+                            Digital Comics
+                        </a>
+                    </div>
+                    <div class="col col3">
+                        <a href="#"><span>DPReview</span><br>
+                            Digital <br>
+                            Photography
+                        </a>
+                    </div>
+                    <div class="col col4">
+                        <a href="#"><span>Fabric</span><br>
+                            Sewing, Quilting <br>
+                            & Knitting
+                        </a>
+                    </div>
+                    <div class="col col5">
+                        <a href="#"><span>Goodreads</span><br>
+                            Book reviews <br>
+                            & <br>
+                            recommendations
+                        </a>
+                    </div>
+                    <div class="col col6">
+                        <a href="#"><span>IMDb</span><br>
+                            Movies, TV <br>
+                            & Celebrities
+                        </a>
+                    </div>
+                    <div class="col col7">
+                        <a href="#"><span>IMDbPro</span><br>
+                            Get Info <br>
+                            Entertainments <br>
+                            Professionals <br>
+                            Need
+                        </a>
+                    </div>
+                </div>
+                <div class="row row4">
+                    <div class="col col1">
+                        <a href="#"><span>Kindle Direct <br> Publishing</span><br>
+                            Indie Digital & <br>
+                            Print Publishing <br>
+                            Made Easy
+                        </a>
+                    </div>
+                    <div class="col col2">
+                        <a href="#"><span>Prime Video <br> Direct</span><br>
+                            Video <br>
+                            Distribution <br>
+                            Made Easy
+                        </a>
+                    </div>
+                    <div class="col col3">
+                        <a href="#"><span>Shopbop</span><br>
+                            Designer <br>
+                            Fashion Brands
+                        </a>
+                    </div>
+                    <div class="col col4">
+                        <a href="#"><span>Woot!</span><br>
+                            Deals and <br>
+                            Shenanigans
+                        </a>
+                    </div>
+                    <div class="col col5">
+                        <a href="#"><span>Zappos</span><br>
+                            Shoes & <br>
+                            Clothing
+                        </a>
+                    </div>
+                    <div class="col col6">
+                        <a href="#"><span>Ring</span><br>
+                            Smart Home <br>
+                            Security Systems
+                        </a>
+                    </div>
+                    <div class="col col7">
+                        <a href="#"><span>eero WiFi</span><br>
+                            Stream 4K Video <br>
+                            in Every Rooms
+                        </a>
+                    </div>
+                </div>
+                <div class="row row5">
+                    <div class="col col1"></div>
+                    <div class="col col2">
+                        <a href="#"><span>Blink</span><br>
+                            Smart Security <br>
+                            for Every Home
+                        </a>
+                    </div>
+                    <div class="col col3">
+                        <a href="#"><span>Neighbors App</span><br>
+                            Real-Time <br>
+                            Crime <br>
+                            & Safety Alerts
+                        </a>
+                    </div>
+                    <div class="col col4">
+                        <a href="#"><span>Amazon Subscription <br> Boxes</span><br>
+                            Top subscription boxes <br>
+                            - right to your door
+                        </a>
+                    </div>
+                    <div class="col col5">
+                        <a href="#"><span>PillPack</span><br>
+                            Pharmacy <br>
+                            Simplified
+                        </a>
+                    </div>
+                    <div class="col col6"></div>
+                    <div class="col col7"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="policy"><a href="#">Conditions of Use</a><a href="#">Privacy Notice</a><a href="#">Your Ads Privacy Choices</a></div>
+            <div class="copyright">
+                <p>Amazon clone by <a href="https://github.com/AKAAravindh">AKAAravindh</a> @ github.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,401 @@
+:root {
+    --text-clr-primary: #ffffff;
+    --text-clr-400: #ccc;
+    --text-clr-secondary: #0F1111;
+    --card-heading: 21px;
+    --padding-body: 1.25rem;
+    --fs-primary: 14px;
+    --clr-body: #F5F6F6;
+    --fs-400: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-clr-primary);
+    border: transparent;
+}
+
+section {
+    max-width: 1540px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>section:nth-child(2) {
+    padding: 0 0.5rem;
+}
+
+nav>section:nth-child(2)>a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin-right: 3px;
+    text-decoration: none;
+    padding: 0 9px;
+    width: max-content !important;
+}
+
+nav>section:nth-child(2)>a:hover {
+    border: 1px solid white;
+    width: max-content !important;
+}
+
+nav>section:nth-child(2)>a:hover:not(:first-child) {
+    padding-top: 3px;
+}
+
+.icon {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section2 .close-icon {
+    height: 85%;
+    aspect-ratio: 1.1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 6px;
+}
+
+.section2 .close-icon>.icon-span {
+    width: 100%;
+    flex-grow: 0;
+    background-color: var(--text-clr-primary);
+}
+
+.icon-span1 {
+    height: 2.5px;
+}
+
+.icon-span2 {
+    height: 2.5px;
+}
+
+.icon-span3 {
+    height: 2.5px;
+}
+
+nav>section:nth-child(2)>a h4 {
+    font-weight: normal;
+    font-size: var(--fs-primary);
+}
+
+/* Main body */
+
+main {
+    background-color: #E3E6E6;
+    width: 100%;
+    min-height: 100vh;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainSection1 {
+    width: 100%;
+}
+
+/* Slider */
+
+.mySlides {
+    overflow-x: hidden;
+    display: none;
+}
+
+.mySlides img {
+    min-width: 1540px;
+    height: 600px;
+    position: relative;
+    z-index: -10;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 6%;
+    padding: 50px 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.244);
+    border: 2px solid black;
+}
+
+.slideshow-container>i {
+    color: var(--text-clr-secondary);
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Slider end */
+
+.mainSection2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-body);
+    isolation: isolate;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    /* background-color: #E3E6E6; */
+    background-image: linear-gradient(to bottom);
+    min-height: 100vh;
+    margin-top: -360px;
+    padding: var(--padding-body);
+}
+
+.add {
+    background-color: var(--text-clr-primary);
+    height: 40px;
+    color: var(--text-clr-secondary);
+    font-size: var(--fs-primary);
+}
+
+.add>a {
+    text-decoration: none;
+    color: #007185;
+}
+
+.add>a:hover {
+    text-decoration: underline;
+    color: #C7511F;
+}
+
+.main-cards {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "one two three four"
+        "five six seven eight";
+    gap: var(--padding-body);
+}
+
+.four-img {
+    width: 100%;
+    height: min-content;
+    padding: 0;
+    margin: 0;
+}
+
+.four-img-span {
+    text-decoration: none;
+    width: calc(50% - 0.5rem);
+    min-height: 151.85px;
+    overflow: hidden;
+}
+
+.four-img-span>div>img {
+    height: 100%;
+}
+
+.four-img-span>p {
+    color: var(--text-clr-secondary);
+    font-size: var(--fs-400);
+    padding-top: 2px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.card9 {
+    display: none;
+}
+
+.cards {
+    background-color: white;
+    padding: var(--padding-body);
+    min-width: 279px;
+    max-width: 385px;
+    overflow: hidden;
+}
+
+.card-title>h4 {
+    font-size: var(--card-heading);
+    padding-bottom: var(--padding-body);
+    color: var(--text-clr-secondary);
+}
+
+.cards .img-parent {
+    overflow: hidden;
+    height: 303.7px;
+}
+
+.cards .card-img {
+    height: max-content;
+}
+
+.card-footer {
+    padding-top: var(--padding-body);
+}
+
+.card-footer>a {
+    text-decoration: none;
+    color: #007185;
+    font-weight: 600;
+    font-size: calc(var(--fs-400) + 1px);
+}
+
+.card-footer>a:hover {
+    text-decoration: underline;
+    color: #C7511F;
+}
+
+.card4 {
+    background-color: transparent;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "one"
+        "two";
+    gap: var(--padding-body);
+    width: 100%;
+}
+
+.card4>div {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    padding: var(--padding-body);
+}
+
+.card4 div:nth-child(1)>div {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card4 div:nth-child(1)>div h4 {
+    font-size: var(--card-heading);
+    color: var(--text-clr-secondary);
+}
+
+.card4 div:nth-child(1)>div button {
+    color: var(--text-clr-secondary);
+    margin: auto 0;
+    background-color: #FFD814;
+    border-color: #FCD200;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    height: 30px;
+}
+
+.card4 div:nth-child(1) {
+    grid-area: one;
+}
+
+.card4 div:nth-child(2) {
+    grid-area: two;
+    background-color: transparent;
+    height: min-content;
+    padding: 0;
+}
+
+.mainSection2 .card3 .card-img {
+    height: 116px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1236px) {
+    .main-cards {
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+            "one two three"
+            "five six four"
+            "seven eight nine";
+    }
+
+    .card9 {
+        display: inline-block;
+    }
+
+    .card4 {
+        grid-template-areas:
+            "two"
+            "one";
+    }
+}
+
+.main-cards .card1 {
+    grid-area: one;
+}
+
+.main-cards .card2 {
+    grid-area: two;
+}
+
+.main-cards .card3 {
+    grid-area: three;
+}
+
+.main-cards .card4 {
+    grid-area: four;
+}
+
+.main-cards .card5 {
+    grid-area: five;
+}
+
+.main-cards .card6 {
+    grid-area: six;
+}
+
+.main-cards .card7 {
+    grid-area: seven;
+}
+
+.main-cards .card8 {
+    grid-area: eight;
+}
+
+.main-cards .card9 {
+    grid-area: nine;
+}
